@@ -1,0 +1,34 @@
+Muhammad Aufa Husen Ramadhan
+1506757642 Apap A
+
+
+Apakah value yang dihasilkan dari ${iterationStatus.odd}?
+Gives only odd number of iteration index.
+
+Penggunaan Conditional Expression pada Thymeleaf
+Pertanyaan 2 : Mengapa condition di dalam th:unless sama dengan di dalam th:if ? Jelaskan
+
+if(a) ~~ unless(!a)
+
+Pertanyaan 3: Coba ubah condition pada th:unless=${student.gpa>=3.49} menjadi
+th:unless=${student.gpa<=3.48} , lalu run kembali aplikasi Anda dan mengakses halaman yang
+sama. Apakah terjadi error? Jika iya, kenapa? Jelaskan alasan Anda. Jika tidak error, apakah
+hasilnya sesuai?
+
+Error. illegal notation “<”.
+
+Pertanyaan 4: Tuliskan cara lain Anda dengan penulisan conditional expression yang berbeda
+untuk mendapatkan hasil yang sama seperti gambar di atas. Hint: Gunakan ternary operator.
+
+<td th:text="${student.gpa}>=3.49?'Cum Laude!':'Sangat Memuaskan!'"></td>
+
+Pertanyaan 5 : Apa yang dimaksud dengan th:replace="fragments/fragment :: header" dan
+th:replace="fragments/fragment :: footer" pada file index.html yang Anda buat?
+
+th:replace="fragments/fragment :: header" replace this whole tag block (literally replacing not inserting) w/ fragment on fragments/fragment and fragment selector of header/footer (depending on the selector (obviously header for header and footer for footer))
+
+Pertanyaan 6 : Apa handler dengan metode ini juga dapat berlaku bagi error lain seperti error
+500: internal server error ?
+
+Not sure :p
+
